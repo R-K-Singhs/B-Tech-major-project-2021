@@ -1,0 +1,33 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+label b {
+  font-size: 1rem;
+}
+.forget-container {
+  font-size: 1rem;
+  color: blue;
+}
+.forget-container:hover {
+  color: rgb(23, 23, 196);
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  .forget-container {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .forget-container {
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,112 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#close:hover {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  transition: 30ms;
+}
+#heading {
+  /* color: blue; */
+  text-shadow: 2px 2px 8px rgb(31, 31, 31);
+}
+.error-box {
+  color: purple;
+  box-shadow: red;
+  font-weight: bold;
+}
+.container-fluid {
+  min-width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  height: 100%;
+}
+.signup_img {
+  width: 70%;
+  height: 80%;
+}
+/* .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+form {
+  border: none;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0px;
+  padding: 1rem;
+  text-decoration: none;
+}
+label {
+  width: 100%;
+  text-align: start;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 0px;
+  padding: 0px;
+}
+input {
+  width: auto;
+  text-align: start;
+  margin-bottom: 3px;
+  border: none;
+  border-bottom: solid 2px blue;
+}
+
+/* error showing .................................................................................*/
+
+p {
+  display: block;
+  font-size: 0.75rem;
+  font-family: cursive;
+  color: red;
+  text-align: start;
+  margin-bottom: 0px;
+}
+
+/* media query for responsive.................................................................. */
+@media screen and (max-width: 255px) {
+  #close {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #cancelbtn {
+    display: none;
+  }
+}
+
+/* make animation......................................................................... */
+#image {
+  animation: up-down 3s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

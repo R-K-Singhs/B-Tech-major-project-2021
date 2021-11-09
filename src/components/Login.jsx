@@ -51,7 +51,8 @@ const Login = () => {
           const errorCode = error.code;
           const errorMessage = error.message;
           setLoading(false);
-          console.log("not Registered : ", errorMessage);
+          alert(errorMessage.split(":")[1].split("(")[0]);
+          console.log("not Registered : ", error);
           // ..
         });
     } else {

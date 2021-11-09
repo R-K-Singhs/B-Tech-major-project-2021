@@ -1,0 +1,15 @@
+.swal-button:hover {
+  color: black;
+}
+.swal-text {
+  color: blueviolet;
+  font-weight: bold;
+  text-align: center;
+}
+.swal-title {
+  color: black;
+  font-weight: bold;
+}
+.swal-overlay {
+  background-color: rgba(43, 165, 137, 0.45);
+}
